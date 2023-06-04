@@ -3,9 +3,9 @@
   "name": "สารบัญคางามิ",
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#12A7D3",
-    "light": "#81D7F7",
-    "dark": "#004E7A"
+    "primary": "#6818D9",
+    "light": "#6818D9",
+    "dark": "#6673FF"
   },
   "topbarLinks": [
     {
@@ -21,6 +21,14 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "icon": "house",
+      "name": "หน้าแรก",
+      "url": "/main",
+      "color": "#6673FF"
     }
   ],
   "navigation": [
@@ -60,5 +68,5 @@
     "twitter": "https://twitter.com/coregameHD",
     "github": "https://github.com/coregameHD"
   },
-  "backgroundImage": "/background.png"
+  "backgroundImage": "images/background2.png"
 }
