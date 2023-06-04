@@ -1,10 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
+  "name": "สารบัญคางามิ",
   "favicon": "/favicon.png",
   "colors": {
     "primary": "#12A7D3",
@@ -13,13 +9,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "name": "Contact us",
+      "url": "https://coregamehd.com/link"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Blog",
+    "url": "https://blog.coregamehd.com"
   },
   "tabs": [
     {
@@ -28,6 +24,14 @@
     }
   ],
   "navigation": [
+    {
+      "group": "Main Menu",
+      "pages": ["main", "code"]
+    },
+    {
+      "group": "Bookmark",
+      "pages": ["bookmark/visualnovel", "bookmark/resources"]
+    },
     {
       "group": "Get Started",
       "pages": ["introduction", "quickstart", "development"]
@@ -51,9 +55,10 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "website": "https://coregamehd.com",
+    "facebook": "https://facebook.com/coregameHD",
+    "twitter": "https://twitter.com/coregameHD",
+    "github": "https://github.com/coregameHD"
   },
   "backgroundImage": "/background.png"
 }

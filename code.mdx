@@ -1,0 +1,33 @@
+---
+title: 'Code'
+description: 'โค้ดและคอมมานด์ไลน์สำหรับใช้ส่วนตัว'
+icon: 'code'
+---
+
+## blog.coregamehd.com
+
+Command Line สำหรับดูแล ghost cms
+
+รัน command line ที่เว็บ [https://flyctl.sh/shell](https://flyctl.sh/shell)
+
+วิธีตั้งค่า default url จาก xxx.fly.io เป็น domain.com
+
+```
+flyctl secrets set url=https://blog.coregamehd.com -a coregameblog
+```
+
+วิธีอัพเดต ghost cms เป็นเวอร์ชั่นใหม่
+
+```
+flyctl deploy --image=ghost:5-alpine -a coregameblog
+```
+
+## docs.coregamehd.com
+
+วิธีรัน local
+
+```
+mintlify dev
+```
+
+จากนั้น ไปที่ `http://localhost:3000`
