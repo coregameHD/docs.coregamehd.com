@@ -19,9 +19,9 @@
   },
   "anchors": [
     {
-      "name": "Code",
-      "url": "/code",
-      "icon": "code"
+      "name": "Links",
+      "url": "https://coregamehd.com/link",
+      "icon": "link"
     },
     {
       "name": "Github",
@@ -32,31 +32,20 @@
   "navigation": [
     {
       "group": "Home",
-      "pages": ["welcome", "code"]
+      "pages": ["welcome"]
     },
     {
-      "group": "Bookmarks",
-      "pages": ["bookmark/visualnovel", "bookmark/resources"]
+      "group": "Bookmarks (Visual Novel)",
+      "pages": ["visualnovel/general", "visualnovel/official", "visualnovel/assets", "visualnovel/article", {
+        "group": "Social Network",
+        "pages": ["visualnovel/socialnetwork/facebook", "visualnovel/socialnetwork/discord", "visualnovel/socialnetwork/youtube"]
+      }
+      ]
     },
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Others",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "code"
       ]
     }
   ],
