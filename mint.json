@@ -17,27 +17,25 @@
     "name": "Blog",
     "url": "https://blog.coregamehd.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "icon": "house",
-      "name": "หน้าแรก",
-      "url": "/main",
-      "color": "#6673FF"
+      "name": "Code",
+      "url": "/code",
+      "icon": "code"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/coregameHD/docs.coregamehd.com",
+      "icon": "github"
     }
   ],
   "navigation": [
     {
-      "group": "Main Menu",
-      "pages": ["main", "code"]
+      "group": "Home",
+      "pages": ["welcome", "code"]
     },
     {
-      "group": "Bookmark",
+      "group": "Bookmarks",
       "pages": ["bookmark/visualnovel", "bookmark/resources"]
     },
     {
