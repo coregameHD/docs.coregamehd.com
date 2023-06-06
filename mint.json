@@ -23,9 +23,9 @@
   },
   "anchors": [
     {
-      "name": "Links",
-      "url": "https://coregamehd.com/link",
-      "icon": "link"
+      "name": "Facebook",
+      "url": "https://www.facebook.com/coregameHD",
+      "icon": "facebook"
     },
     {
       "name": "Github",
@@ -41,7 +41,7 @@
     {
       "group": "Bookmarks (Visual Novel)",
       "pages": ["visualnovel/general", "visualnovel/official", "visualnovel/assets", "visualnovel/article", {
-        "group": "รวม Social Network",
+        "group": "รวมลิงก์ Social Network",
         "pages": ["visualnovel/socialnetwork/facebook", "visualnovel/socialnetwork/discord", "visualnovel/socialnetwork/youtube", "visualnovel/socialnetwork/blog"]
       }
       ]

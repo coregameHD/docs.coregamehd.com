@@ -1,33 +1,44 @@
 ---
 title: 'Code'
-description: 'โค้ดและคอมมานด์ไลน์สำหรับใช้ส่วนตัว'
+description: 'command line สำหรับใช้ส่วนตัว'
 icon: 'code'
 icontype: 'brands'
 ---
 
-## blog.coregamehd.com
+## 1) ปกิณกะคางามิ (blog.coregamehd.com)
 
-Command Line สำหรับดูแล ghost cms
+<Info>รัน command line ที่เว็บ [https://flyctl.sh/shell](https://flyctl.sh/shell)</Info>
 
-รัน command line ที่เว็บ [https://flyctl.sh/shell](https://flyctl.sh/shell)
+<AccordionGroup>
+  <Accordion title="วิธีตั้งค่า default url จาก xxx.fly.io เป็น custom domain ที่กำหนด">
+    รันคอมมานด์ดังต่อไปนี้บน Terminal
 
-วิธีตั้งค่า default url จาก xxx.fly.io เป็น domain.com
+    ```
+    flyctl secrets set url=https://blog.coregamehd.com -a coregameblog
+    ```
 
-```
-flyctl secrets set url=https://blog.coregamehd.com -a coregameblog
-```
+    เปลี่ยน `https://blog.coregamehd.com` เป็น domain ที่ต้องการ
+    เปลี่ยน `coregameblog` เป็นชื่อโปรเจค
 
-วิธีอัพเดต ghost cms เป็นเวอร์ชั่นใหม่
+  </Accordion>
 
-```
-flyctl deploy --image=ghost:5-alpine -a coregameblog
-```
+  <Accordion title="วิธีอัพเดต ghost cms เป็นเวอร์ชั่นใหม่">
+    รันคอมมานด์ดังต่อไปนี้บน Terminal
 
-## docs.coregamehd.com
+    ```
+    flyctl deploy --image=ghost:5-alpine -a coregameblog
+    ```
 
-วิธีรัน local
+    เปลี่ยน `coregameblog` เป็นชื่อโปรเจค
+  </Accordion>
+</AccordionGroup>
 
-1. รันคอมมานด์ใน terminal
+
+## 2) สารบัญคางามิ (docs.coregamehd.com)
+
+วิธีรัน Mintlify บน local environment
+
+1. รันคอมมานด์ดังต่อไปนี้ใน terminal
 
 <CodeGroup>
 
@@ -41,11 +52,12 @@ flyctl deploy --image=ghost:5-alpine -a coregameblog
 
 </CodeGroup>
 
-2. รันคอมมานด์
-
+2. cd ไปที่ directory ของโปรเจค จากนั้นรันคอมมานด์ดังต่อไปนี้
 
 ```
 mintlify dev
 ```
 
-จากนั้น ไปที่ `http://localhost:3000`
+เข้าไปที่ `http://localhost:3000` เพื่อดู preview
+
+3. เมื่อทุกอย่างเสร็จสิ้น ให้ push ขึ้น github (main branch)
