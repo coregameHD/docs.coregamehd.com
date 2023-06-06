@@ -17,6 +17,10 @@
     "name": "Blog",
     "url": "https://blog.coregamehd.com"
   },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
   "anchors": [
     {
       "name": "Links",
@@ -37,8 +41,8 @@
     {
       "group": "Bookmarks (Visual Novel)",
       "pages": ["visualnovel/general", "visualnovel/official", "visualnovel/assets", "visualnovel/article", {
-        "group": "Social Network",
-        "pages": ["visualnovel/socialnetwork/facebook", "visualnovel/socialnetwork/discord", "visualnovel/socialnetwork/youtube"]
+        "group": "รวม Social Network",
+        "pages": ["visualnovel/socialnetwork/facebook", "visualnovel/socialnetwork/discord", "visualnovel/socialnetwork/youtube", "visualnovel/socialnetwork/blog"]
       }
       ]
     },
