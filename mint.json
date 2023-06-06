@@ -19,7 +19,10 @@
   },
   "feedback": {
     "suggestEdit": true,
-    "raiseIssue": true
+    "raiseIssue": false
+  },
+  "metadata": {
+    "og:image": "/images/koyomi.jpg"
   },
   "anchors": [
     {
