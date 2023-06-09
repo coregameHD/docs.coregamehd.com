@@ -10,6 +10,49 @@ icontype: 'brands'
 <Info>รัน command line ที่เว็บ [https://flyctl.sh/shell](https://flyctl.sh/shell)</Info>
 
 <AccordionGroup>
+  <Accordion title="วิธีติดตั้ง ghost cms บน fly.io">
+  รันคอมมานด์ดังต่อไปนี้บน Terminal
+
+  ```
+  # Prompt for app name
+  read -p "Enter App Name: " appname </dev/tty && \
+  # Heredoc wrapper for tidyness (starting now, because we can't seem to prompt for input within heredoc)
+  bash << EOF
+  # Inspect script first if you are leery of pipe-to-bash
+  curl -L https://fly.io/install.sh | sh
+  # This will open a browser, where you can enter a username and password, and your credit card (which is required even for free tier, for fraud prevention).
+  flyctl auth signup
+  # Create a directory for the project and enter it, since the next command will output a file
+  mkdir ghost-flyio && cd ghost-flyio
+  # Create an app -- using Ghost Dockerfile, Seattle region, and app name prompted for earlier -- but don't deploy it
+  echo | flyctl launch --name $appname --image=ghost:5-alpine --region sea --no-deploy --org personal
+  # Provision a volume for Ghost's content and SQLite Database.
+  # Size can be up to 3GB and still fit in the free plan, but 1GB will be enough for starters.
+  flyctl volumes create ghost_data --region sea --size 3 -a $appname
+  # Install sed (stream editor), if it isn't already installed
+  sudo apt install sed
+  # Update the port to Ghost's default (2368)
+  sed -i 's/internal_port = 8080/internal_port = 2368/g' fly.toml
+  # Append info about where to find the persistent storage to fly.toml
+  cat >> fly.toml << BLOCK
+  [mounts]
+  source="ghost_data"
+  destination="/var/lib/ghost/content"
+  BLOCK
+  # Set Ghost url
+  flyctl secrets set url=https://$appname.fly.dev
+  # Since we're using SQLite, we need to set ghost to run in development mode
+  flyctl secrets set -a $appname NODE_ENV=development
+  # Put the SQLite DB somewhere where it doesn't get overwritten on redeploy...
+  fly secrets set database__connection__filename=/var/lib/ghost/content/data/ghost-dev.db
+  # Boom! We're airborne.
+  flyctl launch
+  # End our bash Heredoc
+  EOF
+  ```
+
+  </Accordion>
+
   <Accordion title="วิธีตั้งค่า default url จาก xxx.fly.io เป็น custom domain ที่กำหนด">
     รันคอมมานด์ดังต่อไปนี้บน Terminal
 
