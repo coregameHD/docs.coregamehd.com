@@ -7,6 +7,10 @@
     "light": "#6818D9",
     "dark": "#6673FF"
   },
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
+  },
   "topbarLinks": [
     {
       "name": "Contact us",
@@ -52,7 +56,7 @@
     {
       "group": "Others",
       "pages": [
-        "code"
+        "code", "template_vn"
       ]
     }
   ],
