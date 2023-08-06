@@ -22,7 +22,7 @@
     }
   ],
   "feedback": {
-    "suggestEdit": true,
+    "suggestEdit": false,
     "raiseIssue": false
   },
   "metadata": {
