@@ -1,7 +1,12 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "สารบัญคางามิ",
-  "favicon": "/favicon.png",
+  "logo": {
+    "light": "logo/kagamidocs.svg",
+    "dark": "logo/kagamidocs.svg",
+    "href": "logo/kagamidocs.svg"
+  },
+  "favicon": "logo/kagamidocs.jpg",
   "colors": {
     "primary": "#6818D9",
     "light": "#6818D9",
@@ -10,17 +15,13 @@
   "modeToggle": {
     "default": "light",
     "isHidden": true
-  },
+  },  
   "topbarLinks": [
     {
       "name": "Contact us",
       "url": "https://coregamehd.com/link"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Blog",
-    "url": "https://blog.coregamehd.com"
-  },
   "feedback": {
     "suggestEdit": true,
     "raiseIssue": false
@@ -31,12 +32,14 @@
   "anchors": [
     {
       "name": "Facebook",
-      "url": "https://www.facebook.com/coregameHD",
+      "url": "https://facebook.com/coregameHD",
+      "color": "#0165E1",
       "icon": "facebook"
     },
     {
       "name": "Github",
       "url": "https://github.com/coregameHD/docs.coregamehd.com",
+      "color": "#4078c0",
       "icon": "github"
     }
   ],
