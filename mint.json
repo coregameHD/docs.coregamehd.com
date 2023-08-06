@@ -1,11 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "สารบัญคางามิ",
-  "logo": {
-    "light": "logo/kagamidocs.svg",
-    "dark": "logo/kagamidocs.svg",
-    "href": "logo/kagamidocs.svg"
-  },
   "favicon": "logo/kagamidocs.jpg",
   "colors": {
     "primary": "#6818D9",
@@ -57,9 +52,9 @@
       ]
     },
     {
-      "group": "Others",
+      "group": "Others (สำหรับใช้ส่วนตัว)",
       "pages": [
-        "code", "template_vn"
+        "code", "template_vn", "template_nihongo"
       ]
     }
   ],
