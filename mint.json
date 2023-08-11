@@ -8,8 +8,8 @@
   "favicon": "logo/kagamidocs.jpg",
   "colors": {
     "primary": "#6818D9",
-    "light": "#6818D9",
-    "dark": "#6673FF"
+    "light": "#BA97F5",
+    "dark": "#4F3292"
   },
   "modeToggle": {
     "default": "light",
@@ -27,6 +27,10 @@
   },
   "metadata": {
     "og:image": "/images/koyomi.jpg"
+  },
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/coregameHD/docs.coregamehd.com"
   },
   "anchors": [
     {
