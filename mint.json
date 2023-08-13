@@ -48,8 +48,8 @@
   ],
   "tabs": [
     {
-        "name": "Documents",
-        "url": "welcome"
+        "name": "Guides",
+        "url": "guides/all-guides"
     },
     {
         "name": "Blog",
@@ -73,6 +73,12 @@
       "group": "Others (สำหรับใช้ส่วนตัว)",
       "pages": [
         "code", "template_vn", "template_nihongo"
+      ]
+    },
+    {
+      "group": "วิธีแก้ปัญหาเบื้องต้น",
+      "pages": [
+        "guides/all-guides", "guides/troubleshooting"
       ]
     }
   ],
