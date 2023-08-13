@@ -81,7 +81,7 @@
     {
       "group": "แก้ไขปัญหาเบื้องต้น",
       "pages": [
-        "guides/all-guides", "guides/troubleshooting"
+        "guides/all-guides", "guides/japanese-locale", "guide/upscale-magpie"
       ]
     }
   ],
