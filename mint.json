@@ -77,6 +77,12 @@
       "pages": [
         "code", "template_vn", "template_nihongo"
       ]
+    },
+    {
+      "group": "แก้ไขปัญหาเบื้องต้น",
+      "pages": [
+        "guides/all-guides", "guides/troubleshooting"
+      ]
     }
   ],
   "footerSocials": {
