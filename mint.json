@@ -46,6 +46,16 @@
       "icon": "github"
     }
   ],
+  "tabs": [
+    {
+        "name": "Documents",
+        "url": "welcome"
+    },
+    {
+        "name": "Blog",
+        "url": "https://blog.coregamehd.com"
+    }
+  ],
   "navigation": [
     {
       "group": "Home",
